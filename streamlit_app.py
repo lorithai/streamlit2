@@ -27,5 +27,5 @@ st.markdown("""
   <source src="https://github.com/lorithai/streamlit2/blob/main/media/audio/lizard.mp3" type="audio/mpeg">
 </audio>
 
-<button class="lizard-btn" onclick="document.getElementById('lizard-sound').play()><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
+<button class="lizard-btn" onclick="document.getElementById('lizard-sound').play()"><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
 """, unsafe_allow_html=True)
