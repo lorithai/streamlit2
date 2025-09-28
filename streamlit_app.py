@@ -5,4 +5,4 @@ st.write(
     "Hello"
 )
 
-st.button("woah🦎")
+st.button("🦎",icon="🦎")
