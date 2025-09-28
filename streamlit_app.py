@@ -19,9 +19,6 @@ st.title("Lizard")
 st.write(
     "b64_audio"
 )
-
-
-
 html_code = f'''
 <style>
 .lizard-btn {{
@@ -41,7 +38,7 @@ html_code = f'''
 </style>
 
 <audio id="lizard-sound" src="{audio_url}" preload="auto"></audio>
-
+<audio id="lizard-sound2" controls="controls" src="data:audio/mp3;base64,{b64_audio}"" preload="auto"></audio>
 <button class="lizard-btn" id="lizard-btn" aria-label="Play lizard sound">🦎</button>
 
 <script>
