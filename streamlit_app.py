@@ -5,14 +5,14 @@ import base64
 audio_file = "media/audio/lizard.mp3"
 with open(audio_file, "rb") as f:
     audio_bytes = f.read()
+b64_audio = base64.b64encode(audio_bytes).decode()
 
 
 st.title("Lizard")
 st.write(
-    "Hello"
+    audio_bytes
 )
 
-b64_audio = base64.b64encode(audio_bytes).decode()
 
 st.markdown("""
 <style>
