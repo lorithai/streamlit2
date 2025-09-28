@@ -14,7 +14,7 @@ st.write(
     "b64_audio"
 )
 
-st.audio(audio_path, format="audio/mpeg")
+#st.audio(audio_path, format="audio/mpeg")
 
 st.markdown("""
 <style>
@@ -34,8 +34,8 @@ st.markdown("""
 }
 </style>
 
-<audio id="lizard-sound">
-  <source src="data:audio/mp3;base64,{b64_audio}" type="audio/mpeg" preload="auto" controls>
+<audio id="lizard-sound" controls>
+  <source src="data:audio/mp3;base64,{b64_audio}" type="audio/mpeg" preload="auto">
 </audio>
 
 <button class="lizard-btn" onclick="document.getElementById('lizard-sound').play()"><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
