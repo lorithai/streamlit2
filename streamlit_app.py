@@ -10,7 +10,7 @@ b64_audio = base64.b64encode(audio_bytes).decode()
 
 st.title("Lizard")
 st.write(
-    audio_bytes
+    b64_audio
 )
 
 
