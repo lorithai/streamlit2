@@ -35,29 +35,19 @@ st.markdown("""
 }
 </style>
 
-<audio id="lizard-sound" controls>
-  <source src="data:audio/mp3;base64,{b64_audio}"  preload="auto">
-</audio>
+
             
 <audio id="lizard-sound2" controls>
   <source src="https://raw.githubusercontent.com/lorithai/streamlit2/main/media/audio/lizard.mp3" type="audio/mpeg">
 </audio>
             
-<audio id="lizard-sound3" controls>
-  <source src="https://raw.githubusercontent.com/lorithai/streamlit2/main/media/audio/lizard.wav" type="audio/wav">
-</audio>
+
 
 <button class="lizard-btn">🦎</button>
 
-     
-
-<button class="lizard-btn2" onclick="document.getElementById('lizard-sound2').play()"><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
-            
-<button class="lizard-btn3" onclick="var a=document.getElementById('lizard-sound2'); a.currentTime=0; a.play();">🦎</button>  
-
 <script>
 document.getElementById("lizard-btn").addEventListener("click", function() {
-    var a = document.getElementById("lizard-sound2");
+    var a = document.getElementById("lizard-sound");
     a.currentTime = 0;
     a.play();
 });
@@ -65,3 +55,14 @@ document.getElementById("lizard-btn").addEventListener("click", function() {
 
 
 """, unsafe_allow_html=True)
+
+
+"""
+<audio id="lizard-sound" controls>
+  <source src="data:audio/mp3;base64,{b64_audio}"  preload="auto">
+</audio>
+
+<audio id="lizard-sound3" controls>
+  <source src="https://raw.githubusercontent.com/lorithai/streamlit2/main/media/audio/lizard.wav" type="audio/wav">
+</audio>
+"""
