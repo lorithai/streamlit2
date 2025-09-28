@@ -37,8 +37,7 @@ html_code = f'''
 }}
 </style>
 
-
-<audio id="lizard-sound" controls="controls" src="data:audio/mp3;base64,{b64_audio}"" preload="auto"></audio>
+<audio id="lizard-sound" src="data:audio/mp3;base64,{b64_audio}"" preload="auto"></audio>
 <button class="lizard-btn" id="lizard-btn" aria-label="Play lizard sound">🦎</button>
 
 <script>
