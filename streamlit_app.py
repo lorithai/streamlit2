@@ -10,9 +10,9 @@ b64_audio = base64.b64encode(audio_bytes).decode()
 
 st.title("Lizard")
 st.write(
-    b64_audio
+    "b64_audio"
 )
-
+st.audio("media/audio/lizard.mp3", format="audio/mpeg")
 
 st.markdown("""
 <style>
