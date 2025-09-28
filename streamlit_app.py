@@ -4,6 +4,7 @@ import os
 # load media
 audio_file = "media/audio/lizard.mp3"
 audio_path = os.path.join("media","audio","lizard.mp3")
+audio_path_waw = os.path.join("media","audio","lizard.waw")
 with open(audio_path, "rb") as f:
     audio_bytes = f.read()
 b64_audio = base64.b64encode(audio_bytes).decode()
@@ -42,6 +43,10 @@ st.markdown("""
   <source src="https://raw.githubusercontent.com/lorithai/streamlit2/main/media/audio/lizard.mp3" type="audio/mpeg">
 </audio>
             
+<audio id="lizard-sound3" controls>
+  <source src="https://raw.githubusercontent.com/lorithai/streamlit2/main/media/audio/lizard.wav" type="audio/wav">
+</audio>
+
 <button class="lizard-btn" onclick="document.getElementById('lizard-sound2').play()">🦎</button>
 
      
