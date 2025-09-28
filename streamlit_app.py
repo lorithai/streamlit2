@@ -23,5 +23,5 @@ st.markdown("""
 }
 </style>
 
-<button class="lizard-btn"><div style="font-size:2rem;width:100%;text-align:center;">🦎</div></button>
+<button class="lizard-btn"><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
 """, unsafe_allow_html=True)
