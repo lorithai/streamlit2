@@ -33,7 +33,7 @@ st.markdown("""
 </style>
 
 <audio id="lizard-sound">
-  <source src="data:audio/mp3;base64,{b64_audio}" type="audio/mpeg">
+  <source src="data:audio/mp3;base64,{b64_audio}" type="audio/mpeg" preload="auto" controls>
 </audio>
 
 <button class="lizard-btn" onclick="document.getElementById('lizard-sound').play()"><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
