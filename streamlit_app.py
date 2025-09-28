@@ -5,4 +5,23 @@ st.write(
     "Hello"
 )
 
-st.button("🦎",icon="🦎")
+st.markdown("""
+<style>
+.lizard-btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 50%;  /* Makes it round */
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+</style>
+
+<button class="lizard-btn">🦎</button>
+""", unsafe_allow_html=True)
