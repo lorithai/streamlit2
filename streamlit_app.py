@@ -1,9 +1,18 @@
 import streamlit as st
+import base64
+
+# load media
+audio_file = "media/audio/lizard.mp3"
+with open(audio_file, "rb") as f:
+    audio_bytes = f.read()
+
 
 st.title("Lizard")
 st.write(
     "Hello"
 )
+
+b64_audio = base64.b64encode(audio_bytes).decode()
 
 st.markdown("""
 <style>
@@ -24,7 +33,7 @@ st.markdown("""
 </style>
 
 <audio id="lizard-sound">
-  <source src="https://github.com/lorithai/streamlit2/blob/main/media/audio/lizard.mp3" type="audio/mpeg">
+  <source src="data:audio/mp3;base64,{b64_audio}" type="audio/mpeg">
 </audio>
 
 <button class="lizard-btn" onclick="document.getElementById('lizard-sound').play()"><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
