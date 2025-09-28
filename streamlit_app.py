@@ -3,7 +3,8 @@ import base64
 import os
 # load media
 audio_file = "media/audio/lizard.mp3"
-with open(audio_file, "rb") as f:
+audio_path = os.path.join("media","audio","lizard.mp3")
+with open(audio_path, "rb") as f:
     audio_bytes = f.read()
 b64_audio = base64.b64encode(audio_bytes).decode()
 
@@ -12,7 +13,7 @@ st.title("Lizard")
 st.write(
     "b64_audio"
 )
-audio_path = os.path.join("media","audio","lizard.mp3")
+
 st.audio(audio_path, format="audio/mpeg")
 
 st.markdown("""
