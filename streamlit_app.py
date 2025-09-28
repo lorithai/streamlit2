@@ -1,6 +1,6 @@
 import streamlit as st
 import base64
-
+import os
 # load media
 audio_file = "media/audio/lizard.mp3"
 with open(audio_file, "rb") as f:
@@ -12,7 +12,8 @@ st.title("Lizard")
 st.write(
     "b64_audio"
 )
-st.audio("media/audio/lizard.mp3", format="audio/mpeg")
+audio_path = os.path.join("media","audio","lizard.mp3")
+st.audio(audio_path, format="audio/mpeg")
 
 st.markdown("""
 <style>
