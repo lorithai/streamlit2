@@ -47,11 +47,21 @@ st.markdown("""
   <source src="https://raw.githubusercontent.com/lorithai/streamlit2/main/media/audio/lizard.wav" type="audio/wav">
 </audio>
 
-<button class="lizard-btn" onclick="document.getElementById('lizard-sound3').play()">🦎</button>
+<button class="lizard-btn">🦎</button>
 
      
 
 <button class="lizard-btn2" onclick="document.getElementById('lizard-sound2').play()"><div style="font-size:1.5rem;width:100%;text-align:center;">🦎</div></button>
             
-<button class="lizard-btn3" onclick="var a=document.getElementById('lizard-sound2'); a.currentTime=0; a.play();">🦎</button>   
+<button class="lizard-btn3" onclick="var a=document.getElementById('lizard-sound2'); a.currentTime=0; a.play();">🦎</button>  
+
+<script>
+document.getElementById("lizard-btn").addEventListener("click", function() {
+    var a = document.getElementById("lizard-sound2");
+    a.currentTime = 0;
+    a.play();
+});
+</script>
+
+
 """, unsafe_allow_html=True)
